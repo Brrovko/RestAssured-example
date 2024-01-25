@@ -16,7 +16,7 @@ public class TestBase {
 
         RestAssured.baseURI =  ConfigurationReader.get("devEx_url");;
         RestAssured.basePath = "api";
-        RestAssured.requestSpecification = given().accept(ContentType.ANY);
+        RestAssured.requestSpecification = given().accept(ContentType.JSON);
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
     }
 }
