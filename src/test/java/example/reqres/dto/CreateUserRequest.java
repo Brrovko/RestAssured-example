@@ -1,4 +1,4 @@
-package example.dto;
+package example.reqres.dto;
 
 public class CreateUserRequest {
     private String name;

@@ -1,10 +1,9 @@
-package example;
+package example.reqres;
 
-import example.dto.CreateUserRequest;
-import example.dto.CreateUserResponse;
-import example.dto.GetUserResponse;
+import example.reqres.dto.CreateUserRequest;
+import example.reqres.dto.CreateUserResponse;
+import example.reqres.dto.GetUserResponse;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.Assertions;
