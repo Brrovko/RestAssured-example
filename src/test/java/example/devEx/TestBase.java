@@ -14,7 +14,7 @@ public class TestBase {
     @BeforeAll
     public static void restAssuredSetup(){
 
-        RestAssured.baseURI =  ConfigurationReader.get("devEx_url");;
+        RestAssured.baseURI = ConfigurationReader.get("devEx_url");
         RestAssured.basePath = "api";
         RestAssured.requestSpecification = given().accept(ContentType.JSON);
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
