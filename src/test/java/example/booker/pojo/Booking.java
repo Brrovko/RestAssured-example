@@ -2,7 +2,7 @@ package example.booker.pojo;
 
 public class Booking {
     private String firstname;
-    private String lastnameUser;
+    private String lastname;
     private Integer totalprice;
     private Boolean depositpaid;
     private BookingDates bookingdates;
@@ -13,7 +13,7 @@ public class Booking {
 
     public Booking(String firstname, String lastnameUser, Integer totalprice, Boolean depositpaid, BookingDates bookingdates, String additionalneeds) {
         this.firstname = firstname;
-        this.lastnameUser = lastnameUser;
+        this.lastname = lastnameUser;
         this.totalprice = totalprice;
         this.depositpaid = depositpaid;
         this.bookingdates = bookingdates;
@@ -24,8 +24,8 @@ public class Booking {
         return firstname;
     }
 
-    public String getLastnameUser() {
-        return lastnameUser;
+    public String getLastname() {
+        return lastname;
     }
 
     public Integer getTotalprice() {
